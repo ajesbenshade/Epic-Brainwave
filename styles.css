@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #f0f8ff;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #ff4500;
+}
+
+button {
+  background: #ff4500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #ff6347;
+}
+
+/* Header */
+header {
+  background: #00b7eb;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px; /* Adjust based on actual logo size */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-placeholder.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 400px 100px;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px; /* Adjusted from 400px */
+  border-radius: 10px; /* Adjusted from 100px */
+}
+
+/* Content Sections */
+.content {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Scheduling Section */
+.scheduling-tool {
+  background: #e0f7fa;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  min-height: auto; /* Ensures widget has enough space */
+}
+
+.scheduling-tool iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+/* Events Section */
+.event-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.event {
+  text-align: center;
+  width: 45%;
+}
+
+.event img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Pricing Section */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.corporate-events {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* About Us Section */
+#about img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background: #00b7eb;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
