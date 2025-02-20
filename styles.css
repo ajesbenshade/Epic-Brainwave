@@ -87,16 +87,16 @@ nav a {
   text-align: center;
   border-radius: 10px;
   width: 100%;
-  height: auto; /* Let content determine height */
-  position: relative; /* Ensure children stay within */
-  overflow: hidden; /* Prevent content from spilling outside */
+  height: auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .scheduling-tool iframe {
   width: 100%;
-  height: auto; /* Let iframe size naturally */
+  height: auto;
   border: none;
-  max-height: 1000px; /* Increase if needed to accommodate all content */
+  max-height: 1000px;
 }
 
 /* Events Section */
