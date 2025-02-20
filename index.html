@@ -38,7 +38,7 @@
     <h2>Schedule Your Session</h2>
     <p>Book tutoring or gaming sessions for your child. Gaming is only available after completing homework or tutoring!</p>
     <div class="scheduling-tool">
-      <!-- SimplyBook.me Widget will render here automatically -->
+      <div id="sbw_ey3rmj"></div> <!-- SimplyBook.me container -->
     </div>
   </section>
 
@@ -112,41 +112,49 @@
   </footer>
 
   <!-- SimplyBook.me Scheduling Tool Scripts -->
-  <script src="//widget.simplybook.me/v2/widget/widget.js" type="text/javascript"></script>
   <script type="text/javascript">
-    var widget = new SimplybookWidget({
-      "widget_type": "iframe",
-      "url": "https://epicbrainwave.simplybook.me",
-      "theme": "default",
-      "theme_settings": {
-        "timeline_hide_unavailable": "1",
-        "hide_past_days": "0",
-        "timeline_show_end_time": "0",
-        "timeline_modern_display": "as_slots",
-        "sb_base_color": "#69b1ca",
-        "display_item_mode": "block",
-        "booking_nav_bg_color": "#69b1ca",
-        "body_bg_color": "#f7fbfc",
-        "sb_review_image": "2",
-        "sb_review_image_preview": "/uploads/epicbrainwave/image_files/preview/50016e5121815fae5ab20932c67fdabd.jpg",
-        "dark_font_color": "#233c3e",
-        "light_font_color": "#ffffff",
-        "btn_color_1": "#347a81",
-        "sb_company_label_color": "#ffffff",
-        "hide_img_mode": "1",
-        "show_sidebar": "1",
-        "sb_busy": "#c7b3b3",
-        "sb_available": "#e2eaec"
-      },
-      "timeline": "modern",
-      "datepicker": "top_calendar",
-      "is_rtl": false,
-      "app_config": {
-        "clear_session": 0,
-        "allow_switch_to_ada": 0,
-        "predefined": []
-      }
-    });
+    (function(w, d, s) {
+      var script = d.createElement(s);
+      script.async = true;
+      script.src = '//widget.simplybook.me/v2/widget/widget.js';
+      script.onload = function() {
+        new SimplybookWidget({
+          "widget_type": "iframe",
+          "url": "https://epicbrainwave.simplybook.me",
+          "theme": "default",
+          "theme_settings": {
+            "timeline_hide_unavailable": "1",
+            "hide_past_days": "0",
+            "timeline_show_end_time": "0",
+            "timeline_modern_display": "as_slots",
+            "sb_base_color": "#69b1ca",
+            "display_item_mode": "block",
+            "booking_nav_bg_color": "#69b1ca",
+            "body_bg_color": "#f7fbfc",
+            "sb_review_image": "2",
+            "sb_review_image_preview": "/uploads/epicbrainwave/image_files/preview/50016e5121815fae5ab20932c67fdabd.jpg",
+            "dark_font_color": "#233c3e",
+            "light_font_color": "#ffffff",
+            "btn_color_1": "#347a81",
+            "sb_company_label_color": "#ffffff",
+            "hide_img_mode": "1",
+            "show_sidebar": "1",
+            "sb_busy": "#c7b3b3",
+            "sb_available": "#e2eaec"
+          },
+          "timeline": "modern",
+          "datepicker": "top_calendar",
+          "is_rtl": false,
+          "app_config": {
+            "clear_session": 0,
+            "allow_switch_to_ada": 0,
+            "predefined": []
+          },
+          "container_id": "sbw_ey3rmj"
+        });
+      };
+      d.head.appendChild(script);
+    })(window, document, 'script');
   </script>
 </body>
 </html>
