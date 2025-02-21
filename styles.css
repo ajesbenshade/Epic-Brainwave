@@ -82,14 +82,9 @@ nav a {
 
 /* Scheduling Section */
 .scheduling-tool {
-  background: #e0f7fa;
-  padding: 200px;
-  text-align: center;
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-  position: relative;
-  overflow: hidden;
+  padding: 20px;
+  overflow: visible; /* or remove the overflow rule if not needed */
+  min-height: 600px; /* set a minimum height as required by the widget */
 }
 
 .scheduling-tool iframe {
