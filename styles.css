@@ -80,12 +80,12 @@ nav a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Scheduling Section */
 .scheduling-tool {
   padding: 20px;
-  overflow: visible; /* or remove the overflow rule if not needed */
-  min-height: 600px; /* set a minimum height as required by the widget */
+  overflow: visible;
+  min-height: 600px; /* or whatever height the widget requires */
 }
+
 
 .scheduling-tool iframe {
   width: 100%;
