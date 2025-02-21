@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Epic Brainwave - After School Tutoring & Gaming</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Updated styling for the scheduling container */
+    .scheduling-tool {
+      background: #e0f7fa;
+      padding: 20px; /* Reduced padding for better widget display */
+      text-align: center;
+      border-radius: 10px;
+      width: 100%;
+      min-height: 600px; /* Ensure the container is tall enough */
+      overflow: visible; /* Allow widget content to be fully visible */
+      position: relative;
+    }
+  </style>
 </head>
 <body>
   <!-- Header Section -->
@@ -67,11 +80,26 @@
   <section id="pricing" class="content">
     <h2>Pricing</h2>
     <table>
-      <tr><th>Service</th><th>Rate</th></tr>
-      <tr><td>Tutoring</td><td>$10/hour</td></tr>
-      <tr><td>Gaming (post-homework/tutoring)</td><td>$5/hour</td></tr>
-      <tr><td>Combo Package (2 tutoring + 2 gaming hours)</td><td>$20</td></tr>
-      <tr><td>Weekend Events</td><td>Varies (see Events)</td></tr>
+      <tr>
+        <th>Service</th>
+        <th>Rate</th>
+      </tr>
+      <tr>
+        <td>Tutoring</td>
+        <td>$10/hour</td>
+      </tr>
+      <tr>
+        <td>Gaming (post-homework/tutoring)</td>
+        <td>$5/hour</td>
+      </tr>
+      <tr>
+        <td>Combo Package (2 tutoring + 2 gaming hours)</td>
+        <td>$20</td>
+      </tr>
+      <tr>
+        <td>Weekend Events</td>
+        <td>Varies (see Events)</td>
+      </tr>
     </table>
     <div class="corporate-events">
       <h3>Corporate & Group Events</h3>
@@ -116,11 +144,12 @@
     (function(w, d, s, i) {
         var script = d.createElement(s);
         script.async = true;
-        script.src = "//widget.simplybook.me/v2/widget/widget.js";
+        // Using an explicit HTTPS URL to avoid mixed content issues on secure pages
+        script.src = "https://widget.simplybook.me/v2/widget/widget.js";
         script.onload = function() {
             new SimplybookWidget({
                 "widget_type": "iframe",
-                "url": "https:\/\/epicbrainwave.simplybook.me",
+                "url": "https://epicbrainwave.simplybook.me",
                 "theme": "default",
                 "theme_settings": {
                     "timeline_hide_unavailable": "1",
@@ -132,7 +161,7 @@
                     "booking_nav_bg_color": "#69b1ca",
                     "body_bg_color": "#f7fbfc",
                     "sb_review_image": "2",
-                    "sb_review_image_preview": "\/uploads\/epicbrainwave\/image_files\/preview\/50016e5121815fae5ab20932c67fdabd.jpg",
+                    "sb_review_image_preview": "/uploads/epicbrainwave/image_files/preview/50016e5121815fae5ab20932c67fdabd.jpg",
                     "dark_font_color": "#233c3e",
                     "light_font_color": "#ffffff",
                     "btn_color_1": "#347a81",
