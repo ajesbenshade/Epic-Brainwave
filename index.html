@@ -9,12 +9,21 @@
     /* Updated styling for the scheduling container */
     .scheduling-tool {
       background: #e0f7fa;
-      padding: 20px; /* Reduced padding for better widget display */
+      padding: 20px;
       text-align: center;
       border-radius: 10px;
       width: 100%;
-      min-height: 600px; /* Ensure the container is tall enough */
-      overflow: visible; /* Allow widget content to be fully visible */
+      min-height: 600px; /* Ensure container is tall enough */
+      overflow: visible;
+      position: relative;
+      z-index: 1;
+    }
+    /* Force the iframe to have a fixed height */
+    .scheduling-tool iframe {
+      width: 100%;
+      height: 600px;  /* Adjust this height if needed */
+      border: none;
+      z-index: 2;
       position: relative;
     }
   </style>
@@ -144,9 +153,10 @@
     (function(w, d, s, i) {
         var script = d.createElement(s);
         script.async = true;
-        // Using an explicit HTTPS URL to avoid mixed content issues on secure pages
+        // Using explicit HTTPS to avoid mixed-content issues
         script.src = "https://widget.simplybook.me/v2/widget/widget.js";
         script.onload = function() {
+            console.log("SimplyBook Widget script loaded");
             new SimplybookWidget({
                 "widget_type": "iframe",
                 "url": "https://epicbrainwave.simplybook.me",
